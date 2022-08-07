@@ -1,0 +1,17 @@
+---
+#dependency:
+#  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: centos7
+    image: centos:7
+    dockerfile: ../resources/Dockerfile.j2
+    privileged: true
+    command: /sbin/init
+provisioner:
+  name: ansible
+  playbooks:
+    verify: ../resources/verify.yml
+verifier:
+  name: ansible
