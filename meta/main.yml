@@ -2,8 +2,9 @@ galaxy_info:
   author: Ananiev Vladimir
   description: Install Vector
   company: Netology.ru
-  role_name: vector-role
-   # If the issue tracker for your role is not on github, uncomment the
+  role_name: vectorrole
+  Namespace: AnanievVladimir
+  # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
   # issue_tracker_url: http://example.com/issue/tracker
 
