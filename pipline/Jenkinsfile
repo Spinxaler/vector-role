@@ -19,6 +19,6 @@ node("centos"){
         }
     }
     else{
-        Echo 'need more action'
+        echo 'need more action'
     }
 }
