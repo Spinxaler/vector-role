@@ -6,7 +6,7 @@ driver:
   name: podman
 platforms:
   - name: host
-    image: registry.access.redhat.com/ubi8/ubi-init
+    image: pycontribs/centos:7
     pre_build_image: true
 provisioner:
   name: ansible
