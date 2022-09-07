@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                molecule test
+                sh 'molecule test'
             }
         }
     }
