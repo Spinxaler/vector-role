@@ -11,10 +11,14 @@ node("centos"){
             stage("Run prod"){    
                 sh 'ansible-playbook site.yml -i inventory/prod.yml'
             }
-        else{
-            stage("Run test"){    
-                sh 'ansible-playbook site.yml -i inventory/prod.yml --check --diff'
-            }
         }
+        else{
+           stage("Run test"){    
+                sh 'ansible-playbook site.yml -i inventory/prod.yml --check --diff'
+           }
+        }
+    }
+    else{
+        Echo 'need more action'
     }
 }
